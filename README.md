@@ -48,6 +48,7 @@ url: window.location.protocol + '//'+ window.location.hostname + 'YOUR-PATH-TO-q
 If you are on Windows, you would need to install PHP via Web Platform Installer
 
 ## Library
+* [twitter-api-php](https://github.com/J7mbo/twitter-api-php) - PHP Wrapper for Twitter API v1.1 calls
 * [jquery](https://code.jquery.com/jquery-3.3.1.min.js) - JQuery
 * [sentiment](https://www.npmjs.com/package/sentiment) - Node.js module that uses the AFINN-165 wordlist and Emoji Sentiment Ranking to perform sentiment analysis on arbitrary blocks of input text.
 * [canvasjs](https://canvasjs.com/jquery-charts/) - JQuery chart library

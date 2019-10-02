@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Twitter Sentiment Analysis</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='style/sentiment-analysis.css'>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>  
+    
+</head>
+<body>
+    <main>
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1>Twitter Sentiment Analysis</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 info-text">
+                    Type in any hashtag or keyword and press enter(return) to visualize Tweet Sentiment.
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 input-field">
+                    <i class="material-icons prefix">#</i>
+                    <input data-intro="Enter in the any twitter hashtag here" data-position="right" type="text" id="tag-input" placeholder="Enter in a hashtag here" >
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="spinner-border text-primary d-none" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div id="chartContainer"></div>
+                </div>
+                
+                <div class="col-12 col-md-6 text-center">
+                    <div id="tweet-list" class="text-left"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/canvasjs.min.js"></script>
+    <script src='js/sentiment-analysis-bundle.js'></script>
+</body>
+</html>

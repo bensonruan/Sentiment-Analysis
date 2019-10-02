@@ -37,7 +37,9 @@ watchify sentiment-analysis.js -o sentiment-analysis-bundle.js
 ```
 
 6. Config your path to the queryTwitter.php inside sentiment-analysis.js and sentiment-analysis-bundle.js
+``` bash
 url: window.location.protocol + '//'+ window.location.hostname + '/projects/sentiment-analysis/php/queryTwitter.php?q='
+```
 
 7. Point your localhost to the cloned root directory. Browse to http://localhost/index.html 
 

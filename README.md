@@ -4,7 +4,7 @@ Twitter Sentiment Analysis with Tensorflow.js
 Connect to Twitter API,  gather tweets by hashtag, compute the sentiment of each tweet, and build a real-time dashboard to show the result.
 
 ## Live Demo
-**[https://bensonruan.com/twitter-sentiment-analysis-with-sentiment-node-js/](https://bensonruan.com/twitter-sentiment-analysis-with-sentiment-node-js/)**
+**[https://bensonruan.com/twitter-sentiment-analysis-with-tensorflowjs](https://bensonruan.com/twitter-sentiment-analysis-with-tensorflowjs)**
 
 ![sentiment](https://bensonruan.com/wp-content/uploads/2019/10/twitter-sentiment-analysis.gif)
 

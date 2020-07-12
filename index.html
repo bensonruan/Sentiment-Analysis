@@ -7,8 +7,9 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel='stylesheet' type='text/css' media='screen' href='style/sentiment-analysis.css'>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>  
-    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>   
 </head>
 <body>
     <main>
@@ -20,13 +21,16 @@
             </div>
             <div class="row">
                 <div class="col-12 info-text">
-                    Type in any hashtag or keyword and press enter(return) to visualize Tweet Sentiment.
+                    Type in any hashtag or keyword and press enter to visualize Tweet Sentiment.
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 input-field">
                     <i class="material-icons prefix">#</i>
                     <input data-intro="Enter in the any twitter hashtag here" data-position="right" type="text" id="tag-input" placeholder="Enter in a hashtag here" >
+                    <button class="btn btn-dark btn-search">
+                        Search
+                    </button>
                 </div>
             </div>
             <div class="row">
@@ -40,12 +44,35 @@
                 </div>
                 
                 <div class="col-12 col-md-6 text-center">
-                    <div id="tweet-list" class="text-left"></div>
+                    <div id="tweet-list" class="text-left d-none">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item">
+                              <a class="nav-link active" id="positive-tab" data-toggle="tab" href="#positive" role="tab" aria-controls="positive" aria-selected="true">
+                                Positive <span id="positive-counter"></span>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" id="neutral-tab" data-toggle="tab" href="#neutral" role="tab" aria-controls="neutral" aria-selected="false">
+                                Neutral <span id="neutral-counter"></span>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" id="negative-tab" data-toggle="tab" href="#negative" role="tab" aria-controls="negative" aria-selected="false">
+                                Negative <span id="negative-counter"></span>
+                              </a>
+                            </li>
+                        </ul>
+                          <div class="tab-content">
+                            <div class="tab-pane fade show active" id="positive" role="tabpanel" aria-labelledby="positive-tab"></div>
+                            <div class="tab-pane fade" id="neutral" role="tabpanel" aria-labelledby="neutral-tab"></div>
+                            <div class="tab-pane fade" id="negative" role="tabpanel" aria-labelledby="negative-tab"></div>
+                          </div>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
     <script src="js/canvasjs.min.js"></script>
-    <script src='js/sentiment-analysis-bundle.js'></script>
+    <script src='js/sentiment-analysis.js'></script>
 </body>
 </html>

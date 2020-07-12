@@ -1,9 +1,0 @@
-{
-    "name": "twitter-sentiment-analysis",
-    "version": "1.0.0",
-    "dependencies": {
-        "async": "^2.1.5",
-        "request": "^2.69.0",
-        "sentiment": "^3.0.1"
-    }
-}

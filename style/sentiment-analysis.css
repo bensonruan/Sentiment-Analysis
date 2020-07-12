@@ -34,8 +34,8 @@
     border-radius: 0;
     outline: none;
     height: 3rem;
-    width: 86%;
-    width: calc(100% - 3rem);
+    width: 66%;
+    width: calc(80% - 3rem);
     margin: 0 0 20px 2rem;
     padding: 0;
     box-shadow: none;
@@ -43,15 +43,23 @@
     transition: all 0.3s;
 }
 
+@media screen and (min-width: 992px) {
+    .btn-search {
+        margin-bottom: 5px;
+    }
+}
+
+
 @media screen and (max-width: 992px) {
     #tag-input {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 }
 
 .tweet-table, 
 .tweet-table  td {
-    border: 1px solid black;
+    border: 1px solid #dee2e6;
+    border-top: 0px;
 }
 
 .tweet-table  td {
@@ -63,8 +71,8 @@
   }
 
 .tweet-table td:nth-child(2) {  
-    text-align: center;
-    width: 10%;
+    text-align: left;
+    width: 80%;
 }
 
 .spinner-border {
@@ -76,4 +84,29 @@
 #chartContainer{
     height: 400px;
     margin: 15px;
+}
+
+#positive-tab.nav-link{
+    color: #6878AD;
+}
+#positive-tab.nav-link.active{
+    color: #fff;
+    background-color: #6878AD;
+}
+#neutral-tab.nav-link.active{
+    color: #fff;
+    background-color: #00D0A4;
+}
+#neutral-tab.nav-link{
+    color: #00D0A4;
+}
+#negative-tab.nav-link.active{
+    color: #fff;
+    background-color: #F2736A;
+}
+#negative-tab.nav-link{
+    color: #F2736A;
+}
+.nav-link {
+    padding: .5rem .8rem !important;
 }

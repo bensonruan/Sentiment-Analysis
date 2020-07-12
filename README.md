@@ -1,5 +1,5 @@
 # Sentiment-Analysis
-Twitter Sentiment Analysis with npm Sentiment module 
+Twitter Sentiment Analysis with Tensorflow.js 
  
 Connect to Twitter API,  gather tweets by hashtag, compute the sentiment of each tweet, and build a real-time dashboard to show the result.
 
@@ -21,27 +21,13 @@ git https://github.com/bensonruan/Sentiment-Analysis.git
 * Get the Consumer API keys and Access tokens
 * Replace your API keys in queryTwitter.php
 
-3. run below code in the root directory to install required packages
+
+3. Config your path to the queryTwitter.php inside sentiment-analysis.js and sentiment-analysis-bundle.js
 ``` bash
-npm install
+queryTwitter:  window.location.protocol + '//'+ window.location.hostname + '/js/sentiment/queryTwitter.php?q='
 ```
 
-4. run below code to install browserify and watchify
-``` bash
-npm install -g browserify watchify
-```
-
-5. run below code in the js directory to watch sentiment-analysis.js change and output the bundle js
-``` bash
-watchify sentiment-analysis.js -o sentiment-analysis-bundle.js
-```
-
-6. Config your path to the queryTwitter.php inside sentiment-analysis.js and sentiment-analysis-bundle.js
-``` bash
-url: window.location.protocol + '//'+ window.location.hostname + 'YOUR-PATH-TO-queryTwitter.php?q='
-```
-
-7. Point your localhost to the cloned root directory. Browse to http://localhost/index.html 
+4. Point your localhost to the cloned root directory. Browse to http://localhost/index.html 
 
 
 ## Note
@@ -50,5 +36,5 @@ If you are on Windows, you would need to install PHP via Web Platform Installer
 ## Library
 * [twitter-api-php](https://github.com/J7mbo/twitter-api-php) - PHP Wrapper for Twitter API v1.1 calls
 * [jquery](https://code.jquery.com/jquery-3.3.1.min.js) - JQuery
-* [sentiment](https://www.npmjs.com/package/sentiment) - Node.js module that uses the AFINN-165 wordlist and Emoji Sentiment Ranking to perform sentiment analysis on arbitrary blocks of input text.
+* [tensorflow.js sentiment](https://github.com/tensorflow/tfjs-examples/tree/master/sentiment) - Perform text sentiment analysis on text using the Layers API of TensorFlow.js
 * [canvasjs](https://canvasjs.com/jquery-charts/) - JQuery chart library

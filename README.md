@@ -38,3 +38,6 @@ If you are on Windows, you would need to install PHP via Web Platform Installer
 * [jquery](https://code.jquery.com/jquery-3.3.1.min.js) - JQuery
 * [tensorflow.js sentiment](https://github.com/tensorflow/tfjs-examples/tree/master/sentiment) - Perform text sentiment analysis on text using the Layers API of TensorFlow.js
 * [canvasjs](https://canvasjs.com/jquery-charts/) - JQuery chart library
+
+## Support me 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W6METMY)
